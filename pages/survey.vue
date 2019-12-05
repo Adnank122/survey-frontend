@@ -37,6 +37,7 @@ export default {
   components: {
     CustomInput
   },
+  middleware: 'auth',
   data() {
     return {
       questions: [],

@@ -4,14 +4,7 @@
       <form @submit.prevent="handleSubmit">
         <div class="form-group">
           <label for>Name</label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="name"
-            id="name"
-            name="name"
-            required
-          />
+          <input type="text" class="form-control" v-model="name" id="name" name="name" required />
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
@@ -27,13 +20,7 @@
         </div>
         <div class="form-group">
           <label for="education">Education</label>
-          <select
-            class="form-control"
-            v-model="education"
-            id="education"
-            name="education"
-            required
-          >
+          <select class="form-control" v-model="education" id="education" name="education" required>
             <option>Metric</option>
             <option>Intermediate</option>
             <option>Bachelors</option>
@@ -77,6 +64,7 @@
 
 <script>
 import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -84,6 +72,13 @@ export default {
       email: '',
       gender: '',
       education: ''
+    }
+  },
+  mounted() {
+    const commands = {
+      hello: function() {
+        alert('Hello, annyang')
+      }
     }
   },
   methods: {

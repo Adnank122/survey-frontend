@@ -2,15 +2,16 @@
   <div>
     <navbar></navbar>
     <div class="container">
-    <nuxt />
+      <nuxt />
     </div>
   </div>
 </template>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 <script>
 import Navbar from '@/components/Navbar'
 export default {
-  components:{
+  components: {
     Navbar
   }
 }
@@ -34,6 +35,4 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
-
 </style>
